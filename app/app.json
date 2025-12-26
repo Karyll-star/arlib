@@ -1,0 +1,8 @@
+{
+  "name": "ar-project-name",
+  "slug": "ar-project-name",
+  "scheme": "ar-project-name",
+  "plugins": [
+    "expo-font"
+  ]
+}
