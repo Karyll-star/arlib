@@ -9,11 +9,11 @@
 **Tasks:**
 
 1.  **Configuration**:
-    - [ ] Update `app/tailwind.config.js` to include custom color extensions.
+    - [x] Update `app/tailwind.config.js` to include custom color extensions.
 
 2.  **Layouts & Navigation**:
-    - [ ] `app/app/(tabs)/_layout.tsx`: Update tab bar active colors and AR button color.
-    - [ ] `app/app/_layout.tsx`: Ensure global background is correct (if applicable).
+    - [x] `app/app/(tabs)/_layout.tsx`: Update tab bar active colors and AR button color.
+    - [x] `app/app/_layout.tsx`: Ensure global background is correct (if applicable).
 
 3.  **Main Screens**:
     - [ ] `app/app/(tabs)/index.tsx` (Home): Update headers, icon buttons, search bar, text colors.

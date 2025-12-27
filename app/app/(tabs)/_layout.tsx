@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, Platform, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
+import { Colors } from '../../constants/Colors';
 
 // A map of route names to icon names
 const ICON_MAP = {
@@ -45,8 +46,8 @@ export default function TabLayout() {
   return (
     <Tabs screenOptions={{ 
       headerShown: false,
-      tabBarActiveTintColor: '#398779', // primary
-      tabBarInactiveTintColor: '#6b7280', // gray-500
+      tabBarActiveTintColor: Colors.primary, 
+      tabBarInactiveTintColor: Colors.gray, 
       tabBarStyle: {
         position: 'absolute',
         bottom: 20,
@@ -81,7 +82,7 @@ export default function TabLayout() {
         options={{
           tabBarIcon: ({ color, focused }) => (
              <View style={styles.arButton}>
-                <Ionicons name={focused ? 'scan-circle' : 'scan-circle-outline'} size={40} color="white" />
+                <Ionicons name={focused ? 'scan-circle' : 'scan-circle-outline'} size={40} color={Colors.white} />
              </View>
           ),
         }}
@@ -114,18 +115,18 @@ const styles = StyleSheet.create({
   },
   activeBackground: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(57, 135, 121, 0.15)', // primary with low opacity
+    backgroundColor: 'rgba(57, 135, 121, 0.15)', // primary with low opacity (approximate)
     borderRadius: 30,
   },
   arButton: {
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: '#398779', // primary
+    backgroundColor: Colors.primary, 
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 4,
-    borderColor: 'white',
+    borderColor: Colors.white,
     transform: [{ translateY: -12 }],
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
