@@ -4,5 +4,15 @@
   "scheme": "ar-project-name",
   "plugins": [
     "expo-font"
-  ]
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "f9b7ad80-58d2-472f-81f0-22ab857fd65f"
+    }
+  },
+  "expo": {
+    "android": {
+      "package": "com.karyll.arlib"
+    }
+  }
 }
